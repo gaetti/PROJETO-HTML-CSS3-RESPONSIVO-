@@ -399,6 +399,19 @@ section.sobre__noticia{
     margin-top: 8px;
 }
 
+/*Efeito PARALAX na pagina sobre*/
+
+section.parallax{
+    padding: 30px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+
 /*Nesse linha de codigo estou tentando meu Design Responsivo*/
 @media screen and (max-width:768px){
     footer.footer1{
