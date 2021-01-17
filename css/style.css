@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*Classes que vou usar como auxilio*/
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+}
+
+.w33{
+    float: left;
+    width: 50%;
+}
+
+.center{text-align: center;}
+
+
+.clear{clear: both;}
+
+
+/*Classes que irei utilizar pro meu site*/
+header{
+    padding: 10px 0;
+}
+
+
+.logo{
+    float: left;
+}
+
+.logo h2{
+    font-weight: normal;
+    font-size: 25px;
+}
+nav.menu-mobile{    
+    display:none;
+    float: right;
+    width: 100%; /*dar um width 100% aqui no menu-mobile*/
+}
+
+
+nav.menu-mobile h2{
+    cursor: pointer;
+}
+
+nav.menu.mobile ul{
+    display: none;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    z-index: 999;
+    text-align: center;
+
+}
+nav.menu-mobile li{
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+
+}
+
+nav.menu-mobile li.selected{
+    background: rgb(225, 225, 225);
+}
+nav.menu-mobile a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu li.selected{font-weight: bold;}
+nav.menu{
+    float: right;
+}
+
+nav.menu ul{
+    position: relative;
+    top: 9px;
+}
+
+nav.menu li{
+    padding: 0 10px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+
+nav.menu a{
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu a:hover{text-decoration: underline;}
+
+/*Sessao MAIN-BACKGROUND*/
+section.main-background{
+    position: relative;
+    width: 100%;
+    padding: 140px 0 250px 0;
+    background-image: url("../images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+section.main-background > .container{
+    position: relative;
+    z-index: 2;
+}
+
+div.overlay{ /*Estou usando um efeito de opacidade na imagem!!*/
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.4); 
+    left: 0;
+    top: 0;
+}
+
+section.main-background h2{
+    text-align: center;
+    font-weight: normal;
+    color: cornflowerblue;
+}
+
+section.main-background p{
+    color: rgb(0, 9, 128);
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+
+section.diferenciais{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.line-text{
+    position: relative;
+    display: inline-block;
+    color: rgb(113, 123, 250);
+}
+
+.line-text > div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 2px;
+    background: rgb(113, 123,250);
+}
+
+.line-text h2{
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.icones-diferenciais{
+    margin-top: 30px;
+}
+
+
+.box-icone-single{
+    float: left;
+    width: 33.3%;
+    padding: 0 12px;
+}
+
+.box-icone-single h2{
+    color: rgb(110, 120,250);
+    font-size: 42px;
+}
+
+.box-icone-single p{
+    color: #646464;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+section.sobre-equipe{
+    padding: 30px 0;
+    background: rgb(179, 179, 179);
+
+}
+
+section.sobre-equipe > .container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.equipe-container{
+    width: 50%;
+}
+
+.sobre-container{
+    width: 50%;
+}
+
+
+.sobre-container p{
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.avatar-box{
+    margin-top: 15px;
+}
+
+
+.img-avatar{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-size: 100% 100%;
+}
+
+.descricao-avatar{
+    padding: 0 12px;
+    width: calc(100% - 90px);
+    display: inline-block;
+}
+
+.descricao-avatar h4{
+    color: rgb(30, 30, 30);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.descricao-avatar p{
+    color: rgb(30, 30, 30);
+    font-weight: lighter;
+
+}
+
+section.inscricao{
+    background: rgb(113,123 , 250);
+    padding:22px 0;
+}
+
+h2.inscricao-texto{
+    font-weight: normal;
+    color: white;
+}
+
+.inscricao-form input[type=text]{
+    width: calc(100% - 120px);
+    height: 40px;
+    background: white;
+    border: 1px solid #ccc;
+    display:inline-block
+
+}
+.inscricao-form input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background: rgb(48, 51, 93);
+    cursor: pointer;
+    display:inline-block;
+    border: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+
+}
+
+section.cards{
+    padding:30px 0 ;
+}
+
+.card-single{
+    width: 33.3%;
+    float: left;
+    padding: 40px;
+}
+
+.card-single img{
+    width: 100%;
+
+}
+
+.card-single h3{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.card-single p {
+    margin:10px 0;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+Footer.footer1{
+    background: rgb(113, 123, 250);
+    padding: 25px 0;
+    color: white;
+}
+
+Footer.footer1 h2{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+Footer.footer1 p {
+    margin-top: 8px;
+    font-weight: lighter;
+}
+
+Footer.footer1 a{
+    display:block;
+    color: white;
+}
+
+Footer.footer2{
+    padding: 18px 0;
+    color: white;
+    text-align: center;
+    background: rgb(79, 85, 168);
+}
+
+/*Aqui irei colocar os estilos CSS da Página SOBRE!*/
+
+section.title-page{
+    padding: 50px;
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.title-page h2{
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 20px;
+    font: lighter;
+}
+
+section.title-page p{
+    color: rgba(225, 225, 225, 0.8);
+    font-style: italic;
+    font: lighter;
+}
+
+section.title-page > .container{position: relative; z-index: 101;}
+
+.overlay-title-page{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4)
+}
+
+
+/*Sobre container da noticia*/
+
+section.sobre__noticia{
+    padding: 30px 0;
+}
+
+.sobre__noticia-single img{
+    max-width: 100%;
+    float: left;
+    width: 50%;
+}
+
+.sobre__noticia-single p{
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 10px 20px;
+    float: left;
+    width: 50%;
+    line-height: 25px;
+}
+
+.paragrafo__noticia__single{
+    margin-top: 15px;
+}
+
+.paragrafo__noticia__single p{
+    margin-top: 8px;
+}
+
+/*Nesse linha de codigo estou tentando meu Design Responsivo*/
+@media screen and (max-width:768px){
+    footer.footer1{
+        text-align: center;
+    }
+    .sobre__noticia-single img{
+        width: 100%;
+    }
+    
+    .sobre__noticia-single p{
+        margin-top: 8px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .card-single{width: 100%;}
+    
+    .w50,.w33{width: 100%;}
+    
+    .box-icone-single{
+        width: 100%;
+    }
+    
+    .equipe-container{
+        width: 100%;
+    }
+    
+    .sobre-container{
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+}
+@media screen and (max-width:500px){
+    nav.menu{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+    .card-single{
+        padding: 10px;
+    }
+}
