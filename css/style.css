@@ -41,6 +41,13 @@ header{
     font-weight: normal;
     font-size: 25px;
 }
+
+.logo a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
 nav.menu-mobile{    
     display:none;
     float: right;
@@ -409,8 +416,21 @@ section.parallax{
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
+    text-align: center;
 }
 
+section.parallax h2.chamada-parallax{
+    border: 1px solid rgba(255, 255, 255, 0.849);
+    padding: 4px 8px;
+    color: rgba(225, 225, 225, 0.8);
+    font-size: 16px;
+    display: inline-block;
+}
+
+section.parallax p{
+    margin-top: 15px;
+    color: white;
+    }
 
 /*Nesse linha de codigo estou tentando meu Design Responsivo*/
 @media screen and (max-width:768px){
