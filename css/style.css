@@ -11,6 +11,16 @@
     padding: 0 2%;
 }
 
+.w60{
+    width: 60%;
+    float: left;
+}
+
+.w40{
+    width: 40%;
+    float: left;
+}
+
 .w50{
     width: 50%;
     float: left;
@@ -513,12 +523,105 @@ section.sobre-final p{
     font-weight: normal;
 }
 
+section.contato{
+    min-height: 600px;
+    padding: 30px 0;
+
+}
 
 
+section.contato .w50,
+section.contato .w100{
+    padding: 0 10px;
+}
 
+
+.formulario form{
+    margin-top: 10px;
+}
+
+.formulario h2{
+    background: #DDDDDD;
+    text-align: center;
+    color: #ACAC9D;
+    font-size: 16px;
+    font-weight: normal;
+    border-left: 5px solid #ccc;
+    padding: 4px 0;
+}
+
+.formulario input[type=text]{
+    width: 100%;
+    height: 40px;
+    border:1px solid #ccc;
+    margin-bottom: 12px;
+    padding-left: 9px;
+}
+
+.formulario input[type= email]{
+    width: 100%;
+    height: 40px;
+    border:1px solid #ccc;
+    margin-bottom: 12px;
+    padding-left: 9px;
+}
+
+
+.formulario textarea{
+    width: 100%;
+    height: 120px;
+    border:1px solid #ccc;
+    margin-bottom: 12px;
+    padding-left: 12px;
+    resize: vertical;
+
+}
+
+
+.tags-form{
+    padding-left: 45px;
+}
+
+
+.tags-form h2{
+    font-weight: normal;
+}
+
+.tags-form p{
+    font-weight: lighter;
+}
+
+.tags-form p.tag-contato{
+    color: white;
+    background:rgb(113, 123, 250);
+    text-align: center;
+    margin-top: 6px;
+    padding: 8px 4px;
+}
 
 /*Nesse linha de codigo estou tentando meu Design Responsivo*/
+
+@media screen and (max-width:1280px){
+    section.contato{
+        min-height: 0px;
+    }
+}
+
 @media screen and (max-width:768px){
+    .tags-form{
+        padding-left: 0px;
+    }
+    .formulario input[type=text]{
+        margin-bottom: 0px;
+    }
+    
+    .formulario input[type= email]{
+        margin-bottom: 0px;
+    }
+     
+    .formulario textarea{
+        margin-bottom: 0px;  
+    }
     .equipe-circle-single{
         padding: 0 8px;
         width:100%;
@@ -540,7 +643,7 @@ section.sobre-final p{
 
     .card-single{width: 100%;}
     
-    .w50,.w33{width: 100%;}
+    .w50,.w33,.w60,.w40,.w100{width: 100%;margin-bottom: 20px;}
     
     .box-icone-single{
         width: 100%;

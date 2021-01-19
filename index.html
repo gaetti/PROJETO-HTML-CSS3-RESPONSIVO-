@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108589404-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js',new Data());
+
+            gtag('config','UA-108559404-1')
+        </script>
         <title> Meu Primeiro Projeto em HTML/ CSS</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width;initial-scale=1.0;maximium-scale=1.0">
+        <meta name="description" content="Meu PROJETO DE HTML/CSS/RESPONSIVO/SEO">
+        <meta name="author" content="Bruno Gaetti">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximium-scale=1.0">
         <meta name="keywords" content="Meu primeiro projeto em HTML,CSS, SEO e Responsivo">
         <!--Nesse projeto tentarei fazer um site bem simples usando meu conhecimento...tentarei usar o responsivo pra adequar melhor ao usuario-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,21 +34,21 @@
                                <a href="sobre.html">Sobre</a>
                            </li>
                            <li>
-                               <a href="">Contato</a>
+                               <a href="contato.html">Contato</a>
                            </li>
                        </ul>
                    </nav>
                    <nav class="menu-mobile">
                        <h2><i class="fa fa-bars"></i></h2>
                         <ul>
-                            <li class="selected">
+                            <li>
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
                                 <a href="sobre.html">Sobre</a>
                             </li>
-                            <li>
-                                <a href="">Contato</a>
+                            <li class="selected">
+                                <a href="contato.html">Contato</a>
                             </li>
                         </ul>
                    </nav><!--menu-mobile-->
